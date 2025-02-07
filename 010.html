@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar, Tabela e Rodapé</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .tabtitulo{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2rem;
+            text-align: center;
+            margin: 50px;
+            text-shadow: 0 4px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .table{
+            width: 80%;
+            margin: 50px auto;
+            box-shadow: 0 4px 8px rgba(0, 0.5, 0.8);
+        }
+
+        .navbar-brand{
+            font-size: 1.6rem;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .navbar{
+            background-color: #a4161a;
+            padding: 10px 20px;
+        }
+
+        .nav-link{
+            color: #ffffff;
+        }
+
+        .btn{
+            color: #ffffff;
+            border-color: #660708;
+        }
+
+        footer{
+            background-color: #a4161a;
+            padding: 20px 0
+        }
+
+        footer .social-icon{
+            color: #FFFFFF;
+            font-size: 3rem;
+            margin: 0 10px;
+        }
+
+        h4{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 6rem;
+            text-align: center;
+            margin: 50px;
+            text-shadow: 0 4px 3px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="img/logo.png" width="50px" alt=""> Ph Informática</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: #ffffff; font-weight: bold;">Início</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Serviços
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Limpeza de computadores e periféricos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Montagem de computadores</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Reparo de periféricos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Preços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Feedback</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Pesquisa" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Pesquisa</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+    <h3 class="tabtitulo">Tabela de Preços</h3>
+
+    <table class="table table-dark table-sm">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Serviço</th>
+                <th scope="col" class="d-none d-sm-table-cell">Preço</th>
+                <th scope="col" class="d-none d-md-table-cell">Tempo de Entrega</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Limpeza de computadores e periféricos</td>
+                <td class="d-none d-sm-table-cell">R$ 119,90</td>
+                <td class="d-none d-md-table-cell">1~2 Dias dependendo da limpeza</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Montagem de computadores</td>
+                <td class="d-none d-sm-table-cell">R$ 149,90</td>
+                <td class="d-none d-md-table-cell">1 Dia</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Reparo de periféricos</td>
+                <td class="d-none d-sm-table-cell">R$ 49,90</td>
+                <td class="d-none d-md-table-cell">12 Horas</td>
+              </tr>
+            </tbody>
+    </table>
+
+    <h4>Volte<br>Sempre!</h4>
+    <center>
+    <img src="img/mao.png" alt="" width="150px">
+    </center>
+    <br>
+    <footer>
+        <div class="row">
+            <div class="col-md-6">
+                <img class="logo" src="img/logo.png" alt="" width="50px">
+                <h3 style="padding-left: 1rem; font-weight: bold; color: white;">Ph Informática</h3>
+                <p style="color: white; padding-left: 1rem">&copy; 2025 | Todos os direitos reservados</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <h3 style="padding-right: 1rem; color: white;">Nos siga nas redes sociais!</h3>
+                <a class="social-icon" href="#"><i class="fab fa-facebook"></i></a>
+                <a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="social-icon" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="social-icon" href="#"><i class="fab fa-google"></i></a>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
